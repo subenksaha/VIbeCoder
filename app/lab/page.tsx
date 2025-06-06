@@ -503,7 +503,7 @@ class Solution:
               ></iframe>
           </div>
         </div>
-        <Card className="bg-white rounded-xl shadow-lg p-4 text-wrap">
+        <Card className="bg-white rounded-xl shadow-lg m-4 text-wrap">
               <CardHeader>Suggestion</CardHeader>
               <CardContent className="text-sm text-gray-700 text-wrap">
                 <CardDescription className="text-gray-700" dangerouslySetInnerHTML={{ __html: marked.parse(suggestions) }}></CardDescription>

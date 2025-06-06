@@ -19,7 +19,7 @@ export const CodeFundamentals: React.FC<CodeFundamentalsProps> = ({
   fundamentals,
   currentTopic
 }) => {
-  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set([]));
+  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set([currentTopic || fundamentals[0]?.id]));
 
   const toggleSection = (id: string) => {
     const newExpanded = new Set(expandedSections);
