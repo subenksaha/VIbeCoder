@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Lightbulb, Copy, ThumbsUp, MessageSquare } from 'lucide-react';
+import { Lightbulb, Copy } from 'lucide-react';
 
 interface PromptSuggestion {
   id: string;

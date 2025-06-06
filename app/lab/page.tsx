@@ -1,27 +1,19 @@
 'use client'
-import React, { use, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { 
   Code, 
   BookOpen, 
-  Lightbulb, 
-  Play, 
   Settings, 
   Maximize2, 
-  Minimize2,
-  RotateCcw,
   Save,
   Share2,
-  Car
 } from 'lucide-react';
-import { CodeEditor } from '../../components/CodeEditor';
 import { PromptSuggestions } from '../../components/PromptSuggestions';
 import { CodeFundamentals } from '../../components/CodeFundamentals'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@radix-ui/react-dropdown-menu';
 import { Badge } from '@/components/ui/badge';
 import { Quiz } from '@/components/Quiz';
-import Script from 'next/script';
-import { get } from 'http';
 import { marked } from 'marked';
 
 // Mock data for the learning lab

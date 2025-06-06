@@ -3,7 +3,7 @@ import { ArrowLeft, Clock, Star, CheckCircle, Target, Lightbulb } from 'lucide-r
 import { CodeEditor } from './CodeEditor';
 import { PromptSuggestions } from './PromptSuggestions';
 import { CodeFundamentals } from './CodeFundamentals';
-import { Lesson } from '../types';
+import { Lesson } from '../app/types';
 
 interface CoursePathwayProps {
   lesson: Lesson;

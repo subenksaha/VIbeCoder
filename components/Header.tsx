@@ -1,6 +1,6 @@
 import React from 'react';
-import { User, Trophy, Settings, LogOut } from 'lucide-react';
-import { User as UserType } from '../types';
+import { User, Settings } from 'lucide-react';
+import { User as UserType } from '../app/types';
 
 interface HeaderProps {
   user?: UserType;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, RotateCcw, Check, Copy, Download } from 'lucide-react';
+import { Play, RotateCcw, Copy } from 'lucide-react';
 
 interface CodeEditorProps {
   initialCode?: string;

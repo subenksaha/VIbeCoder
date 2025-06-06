@@ -21,7 +21,7 @@ export const Quiz: React.FC<QuizProps> = ({ questions, onQuizComplete }) => {
   const [selectedAnswers, setSelectedAnswers] = useState<{ [key: number]: number }>({});
   const [showResults, setShowResults] = useState(false);
   const [quizStartTime] = useState(Date.now());
-  const [quizCompleted, setQuizCompleted] = useState(false);
+  const [, setQuizCompleted] = useState(false);
 
   const currentQuestion = questions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
