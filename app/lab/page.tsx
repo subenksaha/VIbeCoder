@@ -219,7 +219,7 @@ class Solution:
   const [layout, setLayout] = useState<'split' | 'editor-focus' | 'reference-focus'>('split');
   const [selectedLanguage, setSelectedLanguage] = useState('python');
   
-  const [selectedPrompt, setSelectedPrompt] = useState<string>('');
+  const [_, setSelectedPrompt] = useState<string>('');
   const [currentTopic, setCurrentTopic] = useState('');
   const editor = useRef<HTMLIFrameElement>(null);
   const [suggestions, setSuggestions] = useState('');
@@ -228,6 +228,7 @@ class Solution:
     setSelectedPrompt(prompt);
     getAISuggestion(prompt, code);
   };
+  console.log(_)
 
   const handleSaveCode = () => {
     // In a real app, this would save to user's account
@@ -277,7 +278,7 @@ class Solution:
     console.log(`Quiz completed: ${score}/${totalQuestions}`);
   };
 
-  const handleCodeChange = (event: any) => {
+  const handleCodeChange = (event) => {
     if (event.data && event.data.language){
       setContent(event.data.files[0].content);
     }

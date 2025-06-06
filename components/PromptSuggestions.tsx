@@ -106,7 +106,7 @@ export const PromptSuggestions: React.FC<PromptSuggestionsProps> = ({
             <h4 className="font-semibold text-blue-900 mb-1">Pro Tip</h4>
             <p className="text-blue-800 text-sm">
               Start with specific prompts and gradually make them more detailed. 
-              Include context about what you're trying to achieve for better AI responses.
+              Include context about what youre trying to achieve for better AI responses.
             </p>
           </div>
         </div>

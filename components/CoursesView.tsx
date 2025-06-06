@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Search, Filter, Clock, Star, Users } from 'lucide-react';
-import { Course } from '../types';
+import { Search, Filter } from 'lucide-react';
+import { Course } from '../app/types';
 import { CourseCard } from './CourseCard';
 
 interface CoursesViewProps {
